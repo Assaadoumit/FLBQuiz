@@ -3,19 +3,25 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2347B2F82A5715254F306FC6 /* Pods_FLBQuiz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B9263A185BD5268877D0831 /* Pods_FLBQuiz.framework */; };
 		80A61F6A24FFC14100FC4A73 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A61F6924FFC14100FC4A73 /* AppDelegate.swift */; };
 		80A61F6C24FFC14100FC4A73 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A61F6B24FFC14100FC4A73 /* SceneDelegate.swift */; };
 		80A61F6E24FFC14100FC4A73 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A61F6D24FFC14100FC4A73 /* ViewController.swift */; };
 		80A61F7124FFC14100FC4A73 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80A61F6F24FFC14100FC4A73 /* Main.storyboard */; };
 		80A61F7324FFC14200FC4A73 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80A61F7224FFC14200FC4A73 /* Assets.xcassets */; };
 		80A61F7624FFC14200FC4A73 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80A61F7424FFC14200FC4A73 /* LaunchScreen.storyboard */; };
+		80A61F8224FFC37500FC4A73 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 80A61F8124FFC37500FC4A73 /* GoogleService-Info.plist */; };
+		80A61F8424FFCED700FC4A73 /* QuestionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A61F8324FFCED700FC4A73 /* QuestionModel.swift */; };
+		80A61F862500E85500FC4A73 /* QuestionBank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A61F852500E85500FC4A73 /* QuestionBank.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0B9263A185BD5268877D0831 /* Pods_FLBQuiz.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FLBQuiz.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		44965498A4D1B7DD044B823F /* Pods-FLBQuiz.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FLBQuiz.debug.xcconfig"; path = "Target Support Files/Pods-FLBQuiz/Pods-FLBQuiz.debug.xcconfig"; sourceTree = "<group>"; };
 		80A61F6624FFC14100FC4A73 /* FLBQuiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FLBQuiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80A61F6924FFC14100FC4A73 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		80A61F6B24FFC14100FC4A73 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +30,10 @@
 		80A61F7224FFC14200FC4A73 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		80A61F7524FFC14200FC4A73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		80A61F7724FFC14200FC4A73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		80A61F8124FFC37500FC4A73 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		80A61F8324FFCED700FC4A73 /* QuestionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionModel.swift; sourceTree = "<group>"; };
+		80A61F852500E85500FC4A73 /* QuestionBank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionBank.swift; sourceTree = "<group>"; };
+		AD98922D74E4755E229C197B /* Pods-FLBQuiz.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FLBQuiz.release.xcconfig"; path = "Target Support Files/Pods-FLBQuiz/Pods-FLBQuiz.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +41,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2347B2F82A5715254F306FC6 /* Pods_FLBQuiz.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1C575889C77BB61084848E88 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0B9263A185BD5268877D0831 /* Pods_FLBQuiz.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		80A61F5D24FFC14100FC4A73 = {
 			isa = PBXGroup;
 			children = (
 				80A61F6824FFC14100FC4A73 /* FLBQuiz */,
 				80A61F6724FFC14100FC4A73 /* Products */,
+				9EB639206D5DF7AE6AF719CB /* Pods */,
+				1C575889C77BB61084848E88 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,8 +84,28 @@
 				80A61F7224FFC14200FC4A73 /* Assets.xcassets */,
 				80A61F7424FFC14200FC4A73 /* LaunchScreen.storyboard */,
 				80A61F7724FFC14200FC4A73 /* Info.plist */,
+				80A61F8124FFC37500FC4A73 /* GoogleService-Info.plist */,
+				80A61F872500E85A00FC4A73 /* module */,
 			);
 			path = FLBQuiz;
+			sourceTree = "<group>";
+		};
+		80A61F872500E85A00FC4A73 /* module */ = {
+			isa = PBXGroup;
+			children = (
+				80A61F8324FFCED700FC4A73 /* QuestionModel.swift */,
+				80A61F852500E85500FC4A73 /* QuestionBank.swift */,
+			);
+			path = module;
+			sourceTree = "<group>";
+		};
+		9EB639206D5DF7AE6AF719CB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				44965498A4D1B7DD044B823F /* Pods-FLBQuiz.debug.xcconfig */,
+				AD98922D74E4755E229C197B /* Pods-FLBQuiz.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +115,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 80A61F7A24FFC14200FC4A73 /* Build configuration list for PBXNativeTarget "FLBQuiz" */;
 			buildPhases = (
+				FDE6615CC7E3329B08A42C97 /* [CP] Check Pods Manifest.lock */,
 				80A61F6224FFC14100FC4A73 /* Sources */,
 				80A61F6324FFC14100FC4A73 /* Frameworks */,
 				80A61F6424FFC14100FC4A73 /* Resources */,
+				01741AF5C462F19323D53AE0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,6 +169,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				80A61F7624FFC14200FC4A73 /* LaunchScreen.storyboard in Resources */,
+				80A61F8224FFC37500FC4A73 /* GoogleService-Info.plist in Resources */,
 				80A61F7324FFC14200FC4A73 /* Assets.xcassets in Resources */,
 				80A61F7124FFC14100FC4A73 /* Main.storyboard in Resources */,
 			);
@@ -133,13 +177,57 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		01741AF5C462F19323D53AE0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FLBQuiz/Pods-FLBQuiz-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FLBQuiz/Pods-FLBQuiz-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FLBQuiz/Pods-FLBQuiz-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FDE6615CC7E3329B08A42C97 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FLBQuiz-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		80A61F6224FFC14100FC4A73 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				80A61F6E24FFC14100FC4A73 /* ViewController.swift in Sources */,
+				80A61F8424FFCED700FC4A73 /* QuestionModel.swift in Sources */,
 				80A61F6A24FFC14100FC4A73 /* AppDelegate.swift in Sources */,
+				80A61F862500E85500FC4A73 /* QuestionBank.swift in Sources */,
 				80A61F6C24FFC14100FC4A73 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,6 +370,7 @@
 		};
 		80A61F7B24FFC14200FC4A73 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 44965498A4D1B7DD044B823F /* Pods-FLBQuiz.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -299,6 +388,7 @@
 		};
 		80A61F7C24FFC14200FC4A73 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD98922D74E4755E229C197B /* Pods-FLBQuiz.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
