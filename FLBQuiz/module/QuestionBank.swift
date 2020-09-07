@@ -15,24 +15,41 @@ import FirebaseAuth
 class QuestionBank{
     
 class func importQuestion() {
-    
+     
    var ref: DatabaseReference!
     ref = Database.database().reference()
-    
-//     let userID = Auth.auth().currentUser?.uidrx
+     var receivedQuestion = [String]()
+     var correctAnswer = [String]()
+    var optionsForAnswer = [String]()
      ref.child("Questions").observeSingleEvent(of: .value, with: { (snapshot) in
-       // Get user value
-        let value = snapshot.value as? [String:AnyObject]
-       let question = value?["question"] as? String ?? "error in question"
-       let asnwer = value?["answer"] as? String ?? "error in answer"
-        let options = (value?["options"] as! [String])
-        let questionId = value?["qid"] as! Int as Int
-       print("\(question)")
-       }) { (error) in
+        guard let values = snapshot.value as? [[String:AnyObject]] else {
+            print("Error")
+            return
+        }
+        for i in 0...values.count - 1 {
+        let question = values[i]["question"] as? String ?? ""
+       let answer = values[i]["answer"] as? String ?? "error in answer"
+        let options = values[i]["options"] as! [String]
+        
+//        let questionId = value?["qid"] as! Int as Int
+       
+//       print("\(question)")
+        receivedQuestion.append(question)
+        correctAnswer.append(answer)
+            optionsForAnswer.append(contentsOf: options)
+            
+            
+        }
+        print(receivedQuestion)
+        print(correctAnswer)
+        print(optionsForAnswer)
+     }
+     ) { (error) in
          print(error.localizedDescription)
         
      }
    
+    
 }
     
 }
